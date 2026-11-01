@@ -1,0 +1,19 @@
+# your game: never commit it
+*.bin
+*.cue
+*.BIN
+*.CUE
+extracted/
+# made by the build
+build/
+data/
+disc/
+*.cdi
+*.elf
+*.o
+# misc
+__pycache__/
+.DS_Store
+._*
+*.tgz
+*.zip
