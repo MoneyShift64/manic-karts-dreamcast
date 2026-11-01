@@ -1,7 +1,7 @@
 # Manic Karts for Sega Dreamcast
 
 A native Sega Dreamcast port of the 1995 PC kart racer **Manic Karts**, built on a
-decompilation of the DOS game which was part of this project.
+decompilation of the old DOS game.
 
 **No game data is included.** You need your own legally owned copy of the Manic Karts
 PC CD-ROM. The build reads the game's graphics, tracks, sound and music from an image of
@@ -9,7 +9,7 @@ your CD and puts them on the disc image that it makes. Please don't share any di
 that you might build.
 
 ![Racing in London](images/race-london.png)
-![The Dreamcast Junkyard banners in Hamburg](images/race-hamburg.png)
+![The track select menu](images/track-select.png)
 ![The main menu](images/menu.png)
 
 ## AI Disclosure
@@ -28,7 +28,7 @@ Version 1.0 includes:
 - The whole game: single races and the three seasons (Easy, Hard and Manic Cup), with
   points, prize money, the shop and the all-time greats.
 - Every kart drawn at full resolution.
-- Full Dreamcast controller mapping, and the standard soft reset.
+- Full Dreamcast controller mapping.
 - VMU saving: six season slots, plus your records and the all-time greats.
 - The original's cheat codes, typed on a Dreamcast keyboard.
 - Animated trackside signs and water, as in the original.
@@ -76,28 +76,27 @@ changed. Nothing is downloaded.
 
 | Button | In a race |
 |---|---|
-| Right trigger | Accelerate |
-| Left trigger | Brake |
+| Right Trigger | Accelerate |
+| Left Trigger | Brake |
 | Y | Reverse |
-| Analogue stick or d-pad | Steer |
-| X | Cycle through power-ups |
-| A (hold) | Activate power-ups |
+| Analogue Stick or D-Pad | Steer |
+| X | Cycle through Power-Ups |
+| A | Activate Power-Ups |
 | Start | Pause (Continue / Retire / Quit) |
 
-In the menus, the d-pad or stick moves, A or Start selects and B goes back. Hold
+In the menus, the D-Pad or Stick moves, A or Start selects and B goes back. Hold
 **A + B + X + Y + Start** together at any time to go back to the title screen.
 
 ## Saving
 
 Plug a VMU into the controller in "Port A". Seasons are saved and loaded from the LOAD GAME
 and SAVE GAME screens (six slots, files `MANICKRT.001` to `MANICKRT.006`). Your lap records,
-the all-time greats and the ORIEL cheat are saved automatically (file `MANICKRT.SYS`).
+the all-time greats are saved automatically (file `MANICKRT.SYS`).
 
 ## Cheats
 
 Plug a Dreamcast keyboard into any controller port and type a code on any menu screen. Without
-a keyboard, enter the code as a driver name instead. Typing a code again turns it off
-(except ORIEL).
+a keyboard, enter the code as a driver name instead. Typing a code again turns it off.
 
 | Code | Cheat |
 |---|---|
@@ -107,17 +106,6 @@ a keyboard, enter the code as a driver name instead. Typing a code again turns i
 | ORIEL | Go karting - any track: choose which track a season starts on (saved to the VMU). |
 | SOMERVILLE | No collisions at all. As in the original, laps no longer count, so the race can only be retired. |
 | BRASENOSE | +$10,000. |
-| NUFFIELD | Nothing visible, as in the original. |
-| TRINITY | Nothing visible, as in the original. |
-
-## Your own pictures
-
-The build pastes any picture in `mods/` over the game's own floor and wall sheets. Name it
-after the sheet and where its top left corner goes: `mods/RAWALLS1@0,92.png` goes onto
-`RAWALLS1.PCX` at x 0, y 92. Any colours work (each is matched to the nearest of the track's
-256), and pure green (0, 255, 0) is see-through on walls. Walls are drawn 1.6 times taller
-than they are wide, so draw lettering squashed to match. The Dreamcast Junkyard banners in
-`mods/` are an example.
 
 ## Layout
 
@@ -136,7 +124,7 @@ than they are wide, so draw lettering squashed to match. The Dreamcast Junkyard 
 - [KallistiOS](https://github.com/KallistiOS/KallistiOS) and the Dreamcast homebrew
   community, [SH4ZAM](https://github.com/gyrovorbis/sh4zam),
   [mkdcdisc](https://gitlab.com/simulant/mkdcdisc), [Flycast](https://github.com/flyinghead/flycast).
-- The banners in `mods/` are for [The Dreamcast Junkyard](https://www.thedreamcastjunkyard.co.uk/).
+- The trackside banners in `mods/` are for [The Dreamcast Junkyard](https://www.thedreamcastjunkyard.co.uk/).
 - Manic Karts is (c) Manic Media Productions / Virgin Interactive. This project is not
   affiliated with or endorsed by them.
 - This is a non-commercial preservation project and is not affiliated with or endorsed by Sega.
