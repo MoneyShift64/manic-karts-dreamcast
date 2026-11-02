@@ -74,7 +74,7 @@ changed. Nothing is downloaded.
 
 ## Controls
 
-| Button | In a race |
+| Button | In a Race |
 |---|---|
 | Right Trigger | Accelerate |
 | Left Trigger | Brake |
